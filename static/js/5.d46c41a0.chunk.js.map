@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/faq/index.jsx"],"names":["Faq","props"],"mappings":"6JAAe,SAASA,EAAIC,GACxB,OACI","file":"static/js/5.d46c41a0.chunk.js","sourcesContent":["export default function Faq(props){\r\n    return (\r\n        <div>faq</div>\r\n    ) \r\n}"],"sourceRoot":""}
