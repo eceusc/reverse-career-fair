@@ -4,8 +4,9 @@ The deployed site is [here](http://ecercf.live/)
 This Website is the gives information for the ECE RCF event as well as showcases student's projects submitted for the event.
 Created with love from UCSD IEEE and UCSD ECE USC
 
+## Deployment
+    run `npm run build` and the build version will be committed to the `gh-pages` branch.
 ## Contributing
-
 Contributions are always welcome as long you are in the RCF slack!
 
 (todo)
