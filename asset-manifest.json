@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/reverse-career-fair/static/css/main.a617e044.chunk.css",
-    "main.js": "/reverse-career-fair/static/js/main.6a93dcad.chunk.js",
-    "main.js.map": "/reverse-career-fair/static/js/main.6a93dcad.chunk.js.map",
-    "runtime-main.js": "/reverse-career-fair/static/js/runtime-main.b363a218.js",
-    "runtime-main.js.map": "/reverse-career-fair/static/js/runtime-main.b363a218.js.map",
-    "static/js/2.47faf593.chunk.js": "/reverse-career-fair/static/js/2.47faf593.chunk.js",
-    "static/js/2.47faf593.chunk.js.map": "/reverse-career-fair/static/js/2.47faf593.chunk.js.map",
-    "static/js/3.c9b6c965.chunk.js": "/reverse-career-fair/static/js/3.c9b6c965.chunk.js",
-    "static/js/3.c9b6c965.chunk.js.map": "/reverse-career-fair/static/js/3.c9b6c965.chunk.js.map",
-    "index.html": "/reverse-career-fair/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/reverse-career-fair/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.47faf593.chunk.js.LICENSE.txt": "/reverse-career-fair/static/js/2.47faf593.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/reverse-career-fair/static/media/logo.6ce24c58.svg"
+    "main.css": "/ecercf/live/static/css/main.a617e044.chunk.css",
+    "main.js": "/ecercf/live/static/js/main.6a93dcad.chunk.js",
+    "main.js.map": "/ecercf/live/static/js/main.6a93dcad.chunk.js.map",
+    "runtime-main.js": "/ecercf/live/static/js/runtime-main.043ff4c6.js",
+    "runtime-main.js.map": "/ecercf/live/static/js/runtime-main.043ff4c6.js.map",
+    "static/js/2.47faf593.chunk.js": "/ecercf/live/static/js/2.47faf593.chunk.js",
+    "static/js/2.47faf593.chunk.js.map": "/ecercf/live/static/js/2.47faf593.chunk.js.map",
+    "static/js/3.c9b6c965.chunk.js": "/ecercf/live/static/js/3.c9b6c965.chunk.js",
+    "static/js/3.c9b6c965.chunk.js.map": "/ecercf/live/static/js/3.c9b6c965.chunk.js.map",
+    "index.html": "/ecercf/live/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/ecercf/live/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.47faf593.chunk.js.LICENSE.txt": "/ecercf/live/static/js/2.47faf593.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/ecercf/live/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b363a218.js",
+    "static/js/runtime-main.043ff4c6.js",
     "static/js/2.47faf593.chunk.js",
     "static/css/main.a617e044.chunk.css",
     "static/js/main.6a93dcad.chunk.js"
