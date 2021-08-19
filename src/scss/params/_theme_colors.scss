@@ -19,7 +19,7 @@ $background3:  "background3";
 
 $themes:( 
   $light-theme:(
-    $color1:       #8865ac,
+    $color1:       #10A2AE,
     $color2:       #f5b320,
     $color3:       #c50a45,
     $text1:        #000505,
@@ -30,7 +30,7 @@ $themes:(
     $background3:  #4f4f4f,
   ),
   $dark-theme:( //modify this bc we have darkmode lel
-    $color1:       #8865ac,
+    $color1:       #10A2AE,
     $color2:       #f5b320,
     $color3:       #c50a45,
     $text1:        #000505,
@@ -39,15 +39,6 @@ $themes:(
     $background1:  #ffffff,
     $background2:  #b5b5b5,
     $background3:  #4f4f4f,
-    // $color1:       #ba88ed,
-    // $color2:       #D79E1D,
-    // $color3:       #B90A41,
-    // $text1:        #fefcfd,
-    // $text2:        #686868,
-    // $text3:        #000505,
-    // $background1:  #e8e8e8,
-    // $background2:  #cccccc,
-    // $background3:  #1d1d1d,
   )
 );
 

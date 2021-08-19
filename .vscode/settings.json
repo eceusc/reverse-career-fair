@@ -1,5 +1,5 @@
 {
-    "liveSassCompile.settings.generateMap":true,
+    // "liveSassCompile.settings.generateMap":true,
     "liveSassCompile.settings.formats": [
         {
             "format": "expanded",
