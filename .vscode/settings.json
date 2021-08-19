@@ -13,7 +13,7 @@
         }
     ], 
     "liveSassCompile.settings.excludeList": [ 
-        "**/node_modules/**",
+        // "**/node_modules/**",
         ".vscode/**" 
     ]
 }

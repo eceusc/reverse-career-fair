@@ -1,0 +1,110 @@
+@import 'params/theme_colors';
+@import 'params/breakpoints';
+* {
+  padding:0px;
+  margin:0px; 
+  font-family: sans-serif;
+} 
+button{
+  border: none;
+}
+.action-button{
+  @include theme('background-color',$color1);
+  @include theme('color',$text1);
+  padding: 3px 15px;
+  border-radius: 50px; 
+}
+.minor-button{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  @include theme('background-color',$text3);
+  @include theme('border-color',$color1);
+  @include theme('color',$color1);
+} 
+.navbar{
+  padding:1rem;
+  @include theme('background-color', $background3);
+  .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .navbar-toggler.collapsed,.navbar-toggler{
+      .navbar-toggler-icon{
+        background-image: none;
+        transition: ease-in-out .5s;
+        background-image: url("../media/images/Plus.svg");
+        color:white;
+        &:hover,&:focus{
+          transition: ease-in-out .5s;
+          background-image: url("../media/images/Plus green.svg");
+        }
+      }
+      border:none;
+      &:hover,&:focus{
+        border:none;
+        box-shadow: none;
+      }
+    }
+    .navbar-toggler{
+      transition: ease-in-out .5s;
+      .navbar-toggler-icon{
+        transition: ease-in-out .5s;
+        background-image: url("../media/images/Minus.svg");
+        color:white;
+        &:hover,&:focus{
+          transition: ease-in-out .5s;
+          background-image: url("../media/images/Minus green.svg");
+        }
+      }
+      border:none;
+      &:hover,&:focus{
+        border:none;
+        box-shadow: none;
+      }
+    }
+    #responsive-navbar-nav.show{
+      .navbar-nav{
+        a{
+          margin: auto;
+        }
+      }
+      button{
+        width: fill;
+      }
+    }
+    #responsive-navbar-nav{
+      list-style-type: none;
+      flex-grow: initial;
+      justify-content: space-between;
+      .navbar-nav{
+        list-style-type: none;
+        justify-content: space-between;
+        .selected{
+          @include theme('color', $text2);
+        }
+        a{
+          @include theme('color', $text1);
+          margin:auto;
+          margin:0 1rem;
+          text-align: center;
+          .nav-link{
+            text-decoration: none;
+            color:inherit;
+          }
+        }
+        &::after{
+          margin:1rem;
+          content: "";
+          border-width: 1px;
+          border-style: solid;
+          @include theme('border-color',$text1)
+        }
+      }
+    }
+    button.action-button{
+      margin: 1rem;
+      width: fill;
+    }
+  }
+}

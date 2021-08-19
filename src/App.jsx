@@ -3,6 +3,10 @@ import {BrowserRouter as Router,
   Route,
   Switch
 } from 'react-router-dom';
+// css imports
+// import "./css/bootstrap.css";
+import "./css/app.css"
+// component imports
 import Nav from "./components/nav";
 // lazy page importing
 const Home = lazy(_=> import("./pages/home"))
@@ -16,7 +20,15 @@ const Projects = lazy(_=> import("./pages/projects"))
 function App() {
   return (
     <Router>
-      <Nav/>
+      <Nav
+        menu_bar={{
+          "/":"Home",
+          "/about":"About",
+          "/faq":"FAQ",
+          "/companies":"Companies",
+          "/projects":"Projects"
+      }}
+      />
       <Suspense fallback={<div>Loading...</div>}>
         <Switch>
           <Route path="/" exact component={Home}/>

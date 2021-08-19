@@ -1,0 +1,180 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+button {
+  border: none;
+}
+
+.action-button {
+  background-color: #10A2AE ;
+  color: #ffffff ;
+  padding: 3px 15px;
+  border-radius: 50px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .action-button {
+    background-color: #10A2AE ;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .action-button {
+    color: #ffffff ;
+  }
+}
+
+.minor-button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid;
+  background-color: #252525 ;
+  border-color: #10A2AE ;
+  color: #10A2AE ;
+}
+
+@media (prefers-color-scheme: dark) {
+  .minor-button {
+    background-color: #252525 ;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .minor-button {
+    border-color: #10A2AE ;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .minor-button {
+    color: #10A2AE ;
+  }
+}
+
+.navbar {
+  padding: 1rem;
+  background-color: #252525 ;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar {
+    background-color: #252525 ;
+  }
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navbar .container .navbar-toggler.collapsed, .navbar .container .navbar-toggler {
+  border: none;
+}
+
+.navbar .container .navbar-toggler.collapsed .navbar-toggler-icon, .navbar .container .navbar-toggler .navbar-toggler-icon {
+  background-image: none;
+  transition: ease-in-out .5s;
+  background-image: url("../media/images/Plus.svg");
+  color: white;
+}
+
+.navbar .container .navbar-toggler.collapsed .navbar-toggler-icon:hover, .navbar .container .navbar-toggler.collapsed .navbar-toggler-icon:focus, .navbar .container .navbar-toggler .navbar-toggler-icon:hover, .navbar .container .navbar-toggler .navbar-toggler-icon:focus {
+  transition: ease-in-out .5s;
+  background-image: url("../media/images/Plus green.svg");
+}
+
+.navbar .container .navbar-toggler.collapsed:hover, .navbar .container .navbar-toggler.collapsed:focus, .navbar .container .navbar-toggler:hover, .navbar .container .navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar .container .navbar-toggler {
+  transition: ease-in-out .5s;
+  border: none;
+}
+
+.navbar .container .navbar-toggler .navbar-toggler-icon {
+  transition: ease-in-out .5s;
+  background-image: url("../media/images/Minus.svg");
+  color: white;
+}
+
+.navbar .container .navbar-toggler .navbar-toggler-icon:hover, .navbar .container .navbar-toggler .navbar-toggler-icon:focus {
+  transition: ease-in-out .5s;
+  background-image: url("../media/images/Minus green.svg");
+}
+
+.navbar .container .navbar-toggler:hover, .navbar .container .navbar-toggler:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar .container #responsive-navbar-nav.show .navbar-nav a {
+  margin: auto;
+}
+
+.navbar .container #responsive-navbar-nav.show button {
+  width: fill;
+}
+
+.navbar .container #responsive-navbar-nav {
+  list-style-type: none;
+  flex-grow: initial;
+  justify-content: space-between;
+}
+
+.navbar .container #responsive-navbar-nav .navbar-nav {
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.navbar .container #responsive-navbar-nav .navbar-nav .selected {
+  color: #12cad9 ;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar .container #responsive-navbar-nav .navbar-nav .selected {
+    color: #12cad9 ;
+  }
+}
+
+.navbar .container #responsive-navbar-nav .navbar-nav a {
+  color: #ffffff ;
+  margin: auto;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar .container #responsive-navbar-nav .navbar-nav a {
+    color: #ffffff ;
+  }
+}
+
+.navbar .container #responsive-navbar-nav .navbar-nav a .nav-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar .container #responsive-navbar-nav .navbar-nav::after {
+  margin: 1rem;
+  content: "";
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff ;
+}
+
+@media (prefers-color-scheme: dark) {
+  .navbar .container #responsive-navbar-nav .navbar-nav::after {
+    border-color: #ffffff ;
+  }
+}
+
+.navbar .container button.action-button {
+  margin: 1rem;
+  width: fill;
+}
