@@ -2,13 +2,17 @@ import { NavLink as Link } from "react-router-dom"
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
+import {ReactComponent as Logo} from "../../media/images/ECERCF-mini-logo.svg"
 export default function nav(props){
     const {menu_bar}=props
     return(
         <>
         <Navbar collapseOnSelect expand="lg" class="navbar" variant="dark">
             <Container>
-                <Navbar.Brand href="/"><div>{"ECE<-"}</div><div>{"->RCF"}</div></Navbar.Brand> 
+                <Navbar.Brand href="/">
+                    <Logo className="logo"/>
+                    {/* <div>{"ECE<-"}</div><div>{"->RCF"}</div> */}
+                </Navbar.Brand> 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav>
