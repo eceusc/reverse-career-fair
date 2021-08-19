@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/about/index.jsx"],"names":["About","props"],"mappings":"6JAAe,SAASA,EAAMC,GAC1B,OACI","file":"static/js/3.8fd0bb0a.chunk.js","sourcesContent":["export default function About(props){\r\n    return (\r\n        <div>about</div>\r\n    ) \r\n}"],"sourceRoot":""}

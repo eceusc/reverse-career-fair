@@ -1,0 +1,2 @@
+(this.webpackJsonprcf2021=this.webpackJsonprcf2021||[]).push([[4],{35:function(n,t,c){"use strict";c.r(t),c.d(t,"default",(function(){return e}));var r=c(1);function e(n){return Object(r.jsx)("div",{children:"Companies"})}}}]);
+//# sourceMappingURL=4.105163de.chunk.js.map

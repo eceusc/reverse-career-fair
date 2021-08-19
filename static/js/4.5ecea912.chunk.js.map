@@ -1,1 +1,0 @@
-{"version":3,"sources":["pages/companies/index.jsx"],"names":["Companies","props"],"mappings":"6JAAe,SAASA,EAAUC,GAC9B,OACI","file":"static/js/4.5ecea912.chunk.js","sourcesContent":["export default function Companies(props){\r\n    return (\r\n        <div>Companies</div>\r\n    ) \r\n}"],"sourceRoot":""}

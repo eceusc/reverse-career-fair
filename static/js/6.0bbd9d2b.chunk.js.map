@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/home/index.jsx"],"names":["Home","props"],"mappings":"6JAAe,SAASA,EAAKC,GACzB,OACI","file":"static/js/6.0bbd9d2b.chunk.js","sourcesContent":["export default function Home(props){\r\n    return (\r\n        <div>home</div>\r\n    ) \r\n}"],"sourceRoot":""}

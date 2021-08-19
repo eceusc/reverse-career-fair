@@ -1,0 +1,1 @@
+{"version":3,"sources":["pages/projects/index.jsx"],"names":["Projects","props"],"mappings":"6JAAe,SAASA,EAASC,GAC7B,OACI","file":"static/js/7.73b6fc51.chunk.js","sourcesContent":["export default function Projects(props){\r\n    return (\r\n        <div>projects</div>\r\n    ) \r\n}"],"sourceRoot":""}
