@@ -23,7 +23,7 @@ button{
   @include theme('color',$color1);
 } 
 .navbar{
-  padding:1rem;
+  padding:0;
   @include theme('background-color', $background3);
   opacity: .85;
   backdrop-filter: blur(5px);

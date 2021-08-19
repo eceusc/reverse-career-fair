@@ -55,7 +55,7 @@ button {
 }
 
 .navbar {
-  padding: 1rem;
+  padding: 0;
   background-color: #252525 ;
   opacity: .85;
   backdrop-filter: blur(5px);
