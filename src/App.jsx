@@ -4,10 +4,12 @@ import {BrowserRouter as Router,
   Switch
 } from 'react-router-dom';
 // css imports
-// import "./css/bootstrap.css";
+import "./css/bootstrap.css";
 import "./css/app.css"
 // component imports
 import Nav from "./components/nav";
+// import {DevComponent} from "./utils"
+import Error from "./pages/error"
 // lazy page importing
 const Home = lazy(_=> import("./pages/home"))
 const About = lazy(_=> import("./pages/about"))
@@ -18,11 +20,11 @@ const Projects = lazy(_=> import("./pages/projects"))
 // import './App.css';
 // import logo from './logo.svg';
 function App() {
-  return (
+  return ( 
     <Router>
       <Nav
         menu_bar={{
-          "/":"Home",
+          "/":"Home", 
           "/about":"About",
           "/faq":"FAQ",
           "/companies":"Companies",

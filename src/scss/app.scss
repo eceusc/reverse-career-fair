@@ -25,6 +25,8 @@ button{
 .navbar{
   padding:1rem;
   @include theme('background-color', $background3);
+  opacity: .85;
+  backdrop-filter: blur(5px);
   .container{
     display: flex;
     flex-direction: row;
@@ -63,6 +65,11 @@ button{
         box-shadow: none;
       }
     }
+    #responsive-navbar-nav.collapse.show{
+      .navbar-nav>a{
+        margin:1rem;
+      }
+    }
     #responsive-navbar-nav.show{
       .navbar-nav{
         a{
@@ -80,7 +87,7 @@ button{
       .navbar-nav{
         list-style-type: none;
         justify-content: space-between;
-        .selected{
+        .selected,.active{
           @include theme('color', $text2);
         }
         a{
@@ -88,13 +95,14 @@ button{
           margin:auto;
           margin:0 1rem;
           text-align: center;
+          text-decoration: none;
           .nav-link{
             text-decoration: none;
             color:inherit;
           }
         }
         &::after{
-          margin:1rem;
+          margin:0 1rem;
           content: "";
           border-width: 1px;
           border-style: solid;
