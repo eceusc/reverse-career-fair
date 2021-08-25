@@ -143,3 +143,96 @@ button{
     }
   }
 }
+.loading{
+  // display: grid;
+  // place-items: center;
+  // width:fill;
+  // height:fill;
+  .wrapper{
+    // margin:auto;
+    // width:fit-content;
+    svg{
+      // display: inline-block;
+      // margin:auto;
+      width: fill;
+      height: fill;
+      max-width: 50px;
+      max-height: 50px;
+      animation: circle 4s infinite;
+      @keyframes circle {
+        0%{ transform: rotate(0deg);}
+        5%{ transform: rotate(0deg);}
+        20%{ transform: rotate(90deg);}
+        //25
+        30%{ transform: rotate(90deg);}
+        45%{ transform: rotate(180deg);}
+        //50
+        55%{ transform: rotate(180deg);}
+        70%{ transform: rotate(270deg);}
+        //75
+        80%{ transform: rotate(270deg);}
+        95%{ transform: rotate(360deg);}
+        100%{ transform: rotate(360deg);}
+      }
+      #favicon>g>#arrows{
+        #l-out{
+          animation: swipeLO 1s 1s infinite;
+          @keyframes swipeLO {
+            0% {transform: translate(-23px);}
+            100% {transform: translate(0);}
+          }
+        }
+        #l-arrow{
+          animation: swipeLA 1s 1s infinite;
+          @keyframes swipeLA {
+            0% {transform: translate(0);}
+            100% {transform: translate(23px);}
+          }
+        }
+        #r-out{
+          animation: swipeRO 1s 1s infinite;
+          @keyframes swipeRO {
+            0% {transform: translate(23px);}
+            100% {transform: translate(0);}
+          }
+        }
+        #r-arrow{
+          animation: swipeRA 1s 1s infinite;
+          @keyframes swipeRA {
+            0% {transform: translate(0);}
+            100% {transform: translate(-23px);}
+          }
+        }
+      }
+    }
+  }
+}
+.hero{
+  position: relative;
+  width: fill;
+  overflow: hidden;
+  height: 500px;
+  .background{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: fill;
+    height: fill;
+    inset: 0;
+  }
+  .foreground{
+    display: grid;
+    place-items: center;
+    position: absolute;
+    width: fill;
+    height: fill;
+    inset: 0;
+  }
+
+}
+.hero.home{
+  @include theme('color',$text1);
+  .background{
+    @include theme('background-color',$color1);
+  }
+}

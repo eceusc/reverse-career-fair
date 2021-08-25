@@ -7,7 +7,7 @@ export default function nav(props){
     const {menu_bar}=props
     return(
         <>
-        <Navbar collapseOnSelect expand="lg" class="navbar" variant="dark">
+        <Navbar collapseOnSelect expand="lg" class="navbar" variant="dark" fixed="top">
             <Container>
                 <Navbar.Brand href="/">
                     <Logo className="logo"/>

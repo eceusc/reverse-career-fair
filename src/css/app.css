@@ -237,3 +237,141 @@ button {
   margin: 1rem;
   width: fill;
 }
+
+.loading .wrapper svg {
+  width: fill;
+  height: fill;
+  max-width: 50px;
+  max-height: 50px;
+  animation: circle 4s infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(90deg);
+  }
+  30% {
+    transform: rotate(90deg);
+  }
+  45% {
+    transform: rotate(180deg);
+  }
+  55% {
+    transform: rotate(180deg);
+  }
+  70% {
+    transform: rotate(270deg);
+  }
+  80% {
+    transform: rotate(270deg);
+  }
+  95% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading .wrapper svg #favicon > g > #arrows #l-out {
+  animation: swipeLO 1s 1s infinite;
+}
+
+@keyframes swipeLO {
+  0% {
+    transform: translate(-23px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.loading .wrapper svg #favicon > g > #arrows #l-arrow {
+  animation: swipeLA 1s 1s infinite;
+}
+
+@keyframes swipeLA {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(23px);
+  }
+}
+
+.loading .wrapper svg #favicon > g > #arrows #r-out {
+  animation: swipeRO 1s 1s infinite;
+}
+
+@keyframes swipeRO {
+  0% {
+    transform: translate(23px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.loading .wrapper svg #favicon > g > #arrows #r-arrow {
+  animation: swipeRA 1s 1s infinite;
+}
+
+@keyframes swipeRA {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-23px);
+  }
+}
+
+.hero {
+  position: relative;
+  width: fill;
+  overflow: hidden;
+  height: 500px;
+}
+
+.hero .background {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  width: fill;
+  height: fill;
+  inset: 0;
+}
+
+.hero .foreground {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  width: fill;
+  height: fill;
+  inset: 0;
+}
+
+.hero.home {
+  color: #ffffff ;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero.home {
+    color: #ffffff ;
+  }
+}
+
+.hero.home .background {
+  background-color: #10A2AE ;
+}
+
+@media (prefers-color-scheme: dark) {
+  .hero.home .background {
+    background-color: #10A2AE ;
+  }
+}

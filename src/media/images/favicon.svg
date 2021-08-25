@@ -1,0 +1,30 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="favicon">
+<g clip-path="url(#clip0)">
+<rect width="25" height="25" rx="12.5" fill="#252525"/>
+<g id="arrows">
+<g id="l-arrow">
+<path d="M23 9.83883L16.074 4.58337V15.0943L23 9.83883Z" fill="white"/>
+<path d="M18.5146 8.25575H10.5992V11.4219H18.5146V8.25575Z" fill="white"/>
+</g>
+<g id="r-arrow">
+<path d="M2 15.2951L8.92597 20.5506V10.0397L2 15.2951Z" fill="white"/>
+<path d="M6.48539 16.8782H14.4008V13.712H6.48539V16.8782Z" fill="white"/>
+</g>
+<g id="l-out">
+<path d="M23 9.83883L16.074 4.58337V15.0943L23 9.83883Z" fill="white"/>
+<path d="M18.5146 8.25575H10.5992V11.4219H18.5146V8.25575Z" fill="white"/>
+</g>
+<g id="r-out">
+<path d="M2 15.2951L8.92597 20.5506V10.0397L2 15.2951Z" fill="white"/>
+<path d="M6.48539 16.8782H14.4008V13.712H6.48539V16.8782Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="25" height="25" rx="12.5" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -10,6 +10,7 @@ import "./css/app.css"
 import Nav from "./components/nav";
 // import {DevComponent} from "./utils"
 import Error from "./pages/error"
+import Loading from "./components/loading";
 // lazy page importing
 const Home = lazy(_=> import("./pages/home"))
 const About = lazy(_=> import("./pages/about"))
@@ -31,13 +32,14 @@ function App() {
           "/projects":"Projects"
       }}
       />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loading></Loading>}>
         <Switch>
           <Route path="/" exact component={Home}/>
           <Route path="/about" exact component={About}/>
           <Route path="/faq" exact component={Faq}/>
           <Route path="/companies" exact component={Companies}/>
           <Route path="/projects" exact component={Projects}/>
+          <Route component={Error}/>
         </Switch>
       </Suspense>
     </Router>
