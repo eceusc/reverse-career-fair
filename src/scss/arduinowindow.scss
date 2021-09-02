@@ -1,0 +1,102 @@
+@import 'params/theme_colors';
+@import 'params/breakpoints';
+.arduino-window{
+    @include theme('background-color',$background1);
+    .header{
+        @include theme('background-color',$background4);
+        position: relative;
+        width:stretch;
+        padding: 5px 0;
+        .button-background{
+            position: absolute;
+            display: flex;
+            width: stretch;
+            justify-content: space-between;
+            padding:0 4px;
+            .left-buttons{
+                *{
+                    margin-right: 5px;
+                }
+                #file,#upload,#download{
+                    display: none;
+                }
+                @include breakpoint($tablet){
+                    #file,#upload,#download{
+                        display: block;
+                    }
+                }
+            }
+            .right-buttons{
+                display: grid;
+                place-content: center;
+                height: 50px;
+            }
+        }
+        .title{
+            @include theme('color',$text1);
+            top:0;
+            font-weight: 700;
+            font-size: 35px;
+            width: stretch;
+            text-align: center;
+            text-transform:uppercase;
+        }
+    }
+    .terminal{
+        *{font-family: monospace;}
+        padding:3px;
+        .window-title{
+            @include theme('background-color',$background2); 
+            @include theme('color',$background4); 
+            padding: 3px 5px;
+            width:fit-content;
+        }
+        .window{
+            @include theme('background-color',$background2); 
+            width: fill;
+            padding:3rem;
+            font-size: 20px;
+            height: fit-content;
+            .comment{
+                height: fit-content;
+                button{
+                    background-color: rgba(0, 0, 0, 0);
+                    .chevron{     
+                        display: inline-block;               
+                        padding:5px;
+                        height: fit-content;
+                        transform: rotate(90deg);
+                        font-weight: 900;
+                        transition: ease-in-out all .25s;
+                    }
+                    .title{
+                        &::before{
+                            content:"/\*\* ";
+                        }
+                    }
+                }
+                &.collapsed{
+                    button{
+                        .chevron{transform: rotate(0deg);}
+                        .title{
+                            &::after{
+                                content:'...';
+                            }
+                        }
+                    }
+                }
+                .body{
+                    &::before{
+                        content:"    ";
+                    }
+                    &::after{
+                        display: block;
+                        content:"   */";
+                    }
+                    margin:0;
+                    padding:0;
+                }
+            }
+        }
+    }
+}

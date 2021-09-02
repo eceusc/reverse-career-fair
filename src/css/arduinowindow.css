@@ -1,0 +1,151 @@
+@charset "UTF-8";
+.arduino-window {
+  background-color: #10A2AE ;
+}
+
+@media (prefers-color-scheme: dark) {
+  .arduino-window {
+    background-color: #10A2AE ;
+  }
+}
+
+.arduino-window .header {
+  background-color: #1B6369 ;
+  position: relative;
+  width: stretch;
+  padding: 5px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .arduino-window .header {
+    background-color: #1B6369 ;
+  }
+}
+
+.arduino-window .header .button-background {
+  position: absolute;
+  display: flex;
+  width: stretch;
+  justify-content: space-between;
+  padding: 0 4px;
+}
+
+.arduino-window .header .button-background .left-buttons * {
+  margin-right: 5px;
+}
+
+.arduino-window .header .button-background .left-buttons #file, .arduino-window .header .button-background .left-buttons #upload, .arduino-window .header .button-background .left-buttons #download {
+  display: none;
+}
+
+@media (min-width: 50em) {
+  .arduino-window .header .button-background .left-buttons #file, .arduino-window .header .button-background .left-buttons #upload, .arduino-window .header .button-background .left-buttons #download {
+    display: block;
+  }
+}
+
+.arduino-window .header .button-background .right-buttons {
+  display: grid;
+  place-content: center;
+  height: 50px;
+}
+
+.arduino-window .header .title {
+  color: #ffffff ;
+  top: 0;
+  font-weight: 700;
+  font-size: 35px;
+  width: stretch;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (prefers-color-scheme: dark) {
+  .arduino-window .header .title {
+    color: #ffffff ;
+  }
+}
+
+.arduino-window .terminal {
+  padding: 3px;
+}
+
+.arduino-window .terminal * {
+  font-family: monospace;
+}
+
+.arduino-window .terminal .window-title {
+  background-color: #FFFFFF ;
+  color: #1B6369 ;
+  padding: 3px 5px;
+  width: fit-content;
+}
+
+@media (prefers-color-scheme: dark) {
+  .arduino-window .terminal .window-title {
+    background-color: #FFFFFF ;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .arduino-window .terminal .window-title {
+    color: #1B6369 ;
+  }
+}
+
+.arduino-window .terminal .window {
+  background-color: #FFFFFF ;
+  width: fill;
+  padding: 3rem;
+  font-size: 20px;
+  height: fit-content;
+}
+
+@media (prefers-color-scheme: dark) {
+  .arduino-window .terminal .window {
+    background-color: #FFFFFF ;
+  }
+}
+
+.arduino-window .terminal .window .comment {
+  height: fit-content;
+}
+
+.arduino-window .terminal .window .comment button {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.arduino-window .terminal .window .comment button .chevron {
+  display: inline-block;
+  padding: 5px;
+  height: fit-content;
+  transform: rotate(90deg);
+  font-weight: 900;
+  transition: ease-in-out all .25s;
+}
+
+.arduino-window .terminal .window .comment button .title::before {
+  content: "/\*\* ";
+}
+
+.arduino-window .terminal .window .comment.collapsed button .chevron {
+  transform: rotate(0deg);
+}
+
+.arduino-window .terminal .window .comment.collapsed button .title::after {
+  content: '...';
+}
+
+.arduino-window .terminal .window .comment .body {
+  margin: 0;
+  padding: 0;
+}
+
+.arduino-window .terminal .window .comment .body::before {
+  content: "    ";
+}
+
+.arduino-window .terminal .window .comment .body::after {
+  display: block;
+  content: "   */";
+}

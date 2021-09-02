@@ -8,6 +8,9 @@
 button{
   border: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 .action-button{
   @include theme('background-color',$color1);
   @include theme('color',$text1);
@@ -24,9 +27,9 @@ button{
 } 
 .navbar{
   padding:0;
-  @include theme('background-color', $background3);
-  opacity: .85;
-  backdrop-filter: blur(5px);
+  // @include theme('background-color', $background3);
+  background-color: #252525ec;
+  backdrop-filter: blur(2px);
   .container{
     display: flex;
     flex-direction: row;

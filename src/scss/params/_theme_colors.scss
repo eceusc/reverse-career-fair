@@ -16,6 +16,7 @@ $text3:        "text3";
 $background1:  "background1";
 $background2:  "background2";
 $background3:  "background3";
+$background4:  "background4";
 
 $themes:( 
   $light-theme:(
@@ -28,6 +29,7 @@ $themes:(
     $background1:  #10A2AE,
     $background2:  #FFFFFF,
     $background3:  #252525,
+    $background4:  #1B6369,
   ),
   $dark-theme:( //modify this bc we have darkmode lel
     $color1:       #10A2AE,
@@ -38,7 +40,7 @@ $themes:(
     $text3:        #252525,
     $background1:  #10A2AE,
     $background2:  #FFFFFF,
-    $background3:  #252525,
+    $background4:  #1B6369,
   )
 );
 

@@ -1,4 +1,5 @@
-import { NavLink as Link } from "react-router-dom"
+import {NavLink as Link } from "react-router-dom"
+// import { NavLink as Link } from "react-router-dom"
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
@@ -7,7 +8,7 @@ export default function nav(props){
     const {menu_bar}=props
     return(
         <>
-        <Navbar collapseOnSelect expand="lg" class="navbar" variant="dark" fixed="top">
+        <Navbar collapseOnSelect expand="lg" className="navbar" variant="dark" fixed="top">
             <Container>
                 <Navbar.Brand href="/">
                     <Logo className="logo"/>
@@ -15,15 +16,16 @@ export default function nav(props){
                 </Navbar.Brand> 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav>
+                <Nav >
                     {Object.keys(menu_bar).map((key,i)=>
-                        <Link  
+                        <a  
                             key={i}
                             // className={(key===window.location.pathname)?"selected":null}
                             exact to={key}
+                            href={key}
                         >
                             {menu_bar[key]}
-                        </Link>
+                        </a>
                     )}
                 </Nav>
                 <button className="action-button">Contact Us</button>
