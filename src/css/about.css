@@ -1,0 +1,94 @@
+.about-page {
+    overflow: auto;
+    text-align: center;
+}
+.about-page::before {
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+}
+.about-page .text {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    min-width: 300;
+}
+
+.about-page .text .title {
+    
+    font-size: 36px;
+    
+    margin-left: 3%;
+}
+
+.about-page .text .body {
+    margin-left: 5%;
+    margin-top: 15px;
+}
+
+.about-page .monitor-carousel {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 5%;
+    height: 500px;
+    width: 500px;
+}
+
+
+.about-page .monitor-carousel .monitor::after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+.about-page .monitor-carousel .monitor .board {
+    float: left;
+    margin-right: -100%;
+}
+
+.about-page .monitor-carousel .monitor .screen {
+    float: left;
+    margin-right: 13px;
+}
+
+.about-page .monitor-carousel .monitor .left {
+    float: left;
+    margin-top: 369px;
+    margin-left: 40px;
+}
+
+.about-page .monitor-carousel .monitor .right {
+    float: left;
+    margin-top: 369px;
+    
+}
+
+.about-page .monitor-carousel .monitor .light-1 {
+    float: left;
+    margin-top: 354px;
+    margin-left: 25px;
+    margin-right: -33px;
+}
+.about-page .monitor-carousel .monitor .light-2 {
+    float: left;
+    margin-top: 354px;
+    margin-right: -33px;
+}
+.about-page .monitor-carousel .monitor .light-3 {
+    float: left;
+    margin-top: 354px;
+    margin-right: -33px;
+}
+.about-page .monitor-carousel .monitor .light-4 {
+    float: left;
+    margin-top: 354px;
+    margin-right: -33px;
+}
+.about-page .monitor-carousel .monitor .light-5 {
+    float: left;
+    margin-top: 354px;
+    margin-right: 25px;
+}
