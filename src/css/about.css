@@ -52,6 +52,7 @@
 .about-page .monitor-carousel .monitor .screen {
     float: left;
     margin-right: 13px;
+    margin-right: -100%;
 }
 
 .about-page .monitor-carousel .monitor .left {
@@ -60,10 +61,17 @@
     margin-left: 40px;
 }
 
+.about-page .monitor-carousel .monitor .left .l-but {
+    background-color: #0193A0;
+}
 .about-page .monitor-carousel .monitor .right {
     float: left;
     margin-top: 369px;
-    
+    background-color: #0193A0;
+}
+
+.about-page .monitor-carousel .monitor .right .r-but {
+    background-color: #0193A0;
 }
 
 .about-page .monitor-carousel .monitor .light-1 {
