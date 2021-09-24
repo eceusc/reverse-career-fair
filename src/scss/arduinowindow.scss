@@ -48,8 +48,27 @@
         .window-title{
             @include theme('background-color',$background2); 
             @include theme('color',$background4); 
-            padding: 3px 5px;
+            padding: 4px 7px;
             width:fit-content;
+            transform:translateX(7px);
+            border-radius: 7px;
+            position:relative;
+            &::before, &::after{
+                content:'';
+                position:absolute;
+                background-color:white;
+                display:block;
+                width: 10px;
+                height:10px;
+            }
+            &::before{
+                left:0;
+                bottom:0;
+            }
+            &::after{
+                right:0;
+                bottom:0;
+            }
         }
         .window{
             @include theme('background-color',$background2); 

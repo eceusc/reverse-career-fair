@@ -39,7 +39,7 @@ function Render5(props) {
 export default function About(props){
     const [index, setState] = useState(0);
     return (
-        <div className='about-page'>
+        <div className='about-page' id={props?.id}>
             <div className='text'>
                 <div className='title'><b>What is a reverse career fair?</b></div>
                 <div className='body'>

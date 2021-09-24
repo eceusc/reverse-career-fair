@@ -1,6 +1,11 @@
+@import-normalize;
 @import 'params/theme_colors';
 @import 'params/breakpoints';
-* {
+body,#root{
+  min-width: 100vw;
+  min-height: 100vh;
+}
+body>* {
   padding:0px;
   margin:0px; 
   font-family: sans-serif;
@@ -147,18 +152,18 @@ html {
   }
 }
 .loading{
-  // display: grid;
-  // place-items: center;
-  // width:fill;
-  // height:fill;
+  // position:relative;
+  // height:max-content;
   .wrapper{
-    // margin:auto;
-    // width:fit-content;
+    display: grid;
+    place-items: center;
+    width: fill;
+    height: fill;
     svg{
       // display: inline-block;
-      // margin:auto;
-      width: fill;
-      height: fill;
+      margin:auto;
+      width: inherit;
+      height: inherit;
       max-width: 50px;
       max-height: 50px;
       animation: circle 4s infinite;

@@ -1,22 +1,31 @@
+import {useState,useEffect } from "react"
 import {NavLink as Link } from "react-router-dom"
-// import { NavLink as Link } from "react-router-dom"
 import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import NavBootstrap from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import {ReactComponent as Logo} from "../../media/images/ECERCF-mini-logo.svg"
-export default function nav(props){
+import { useLocation } from 'react-router'
+export default function Nav(props){
     const {menu_bar}=props
+    const [active,setActive]=useState(props?.menu_bar?.[0])
+    const location = useLocation()
+    useEffect(_=>{
+        if(location.hash)
+            document.querySelector?.(location.hash)?.scrollIntoView({
+                behavior:'smooth'
+            });
+    },[location])
+    // TODO remove Bootstrap & create functioning active navbar choices
     return(
         <>
         <Navbar collapseOnSelect expand="lg" className="navbar" variant="dark" fixed="top">
             <Container>
                 <Navbar.Brand href="/">
                     <Logo className="logo"/>
-                    {/* <div>{"ECE<-"}</div><div>{"->RCF"}</div> */}
                 </Navbar.Brand> 
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav >
+                <NavBootstrap >
                     {Object.keys(menu_bar).map((key,i)=>
                         <a  
                             key={i}
@@ -27,7 +36,7 @@ export default function nav(props){
                             {menu_bar[key]}
                         </a>
                     )}
-                </Nav>
+                </NavBootstrap>
                 <button className="action-button">Contact Us</button>
             </Navbar.Collapse>
             </Container>

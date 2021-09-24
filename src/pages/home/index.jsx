@@ -7,17 +7,12 @@ export default function Home(props){
         <>
             <Hero
             className="home"
-                background={
-                    _=>{}
-                    // something here idk
-                }
             >
                 <p>greetings </p>
             </Hero>
             <About id='about'/>
             <br></br>
             <ArduinoWindow id='faq'/>
-            
         </>
     ) 
 }
