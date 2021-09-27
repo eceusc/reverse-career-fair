@@ -1,0 +1,52 @@
+.apply .tab {
+    background-image: url("../media/images/background.png");
+    background-size: cover;
+    opacity: 0.4;
+    height: 200px;
+}
+
+.apply .button {
+    float: right;
+    margin-top: -170px;
+    margin-right: 80px;
+    height: 180px;
+    background-color: transparent;
+}
+.apply .text {
+    margin-top: -190px;
+    margin-left: 50px;
+    width: 50%;
+    font-size: 56px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #10A2AE;
+}
+
+
+@media only screen and (max-width:1015px) {
+    .apply .tab {
+        background-image: url("../media/images/background.png");
+        background-size: cover;
+        opacity: 0.4;
+        height: 300px;
+    }
+    
+    .apply .button {
+        float: left;
+        margin-top: -200px;
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+        background-color: transparent;
+    }
+    .apply .text {
+        float: left;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: -275px;
+        text-align: center;
+        width: 90%;
+        font-size: 32px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #10A2AE;
+    }
+}

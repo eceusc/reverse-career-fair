@@ -10,11 +10,11 @@ function RenderScreen(props) {
     console.log(props.index);
     switch (props.index) {
         case 1:
-            return <svg width="500" height="500" viewBox="0 0 286 288" fill="none" xmlns="http://www.w3.org/2000/svg">
+            return <svg width="100%" height="100%" viewBox="0 0 283 287" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M274 49H12V188H274V49Z" fill="#FFFFFF"/>
             </svg>;
         default:
-            return <svg width="500" height="500" viewBox="0 0 286 288" fill="none" xmlns="http://www.w3.org/2000/svg">
+            return <svg width="100%" height="100%" viewBox="0 0 283 287" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M274 49H12V188H274V49Z" fill="#C4C4C4"/>
             </svg>;
     }
