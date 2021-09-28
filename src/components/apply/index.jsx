@@ -3,7 +3,7 @@ import React from 'react';
 
 import {ReactComponent as Btn} from '../../media/images/menu button.svg';
 
-function btnclk (props) {
+function Btnclk (props) {
     console.log("1");
     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
     return 1;
@@ -12,13 +12,11 @@ function btnclk (props) {
 export default function Apply(props){
     return (
         <div className="apply">
+            <button className="button" onClick={Btnclk}><Btn />  </button>
             <div className="tab"></div>
             <div className="text">
                 Got a project you want to show off?
             </div>
-            <button className="button" >
-                <Btn/>
-            </button>
         </div>
     ) 
 }
