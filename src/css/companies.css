@@ -1,0 +1,14 @@
+.company-title {
+    margin-top: 5px;
+    margin-bottom: 100px;
+    margin-left: -5px;
+    height: 189px;
+    width: 518px;
+}
+
+@media only screen and (max-width : 550px) {
+    .company-title {
+        height: auto;
+        width: 90%;
+    }
+}
