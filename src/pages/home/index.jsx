@@ -3,6 +3,7 @@ import Hero from "../../components/hero"
 import About from "../../components/about"
 import Companies from "../../components/companies"
 import Apply from "../../components/apply"
+import Footer from "../../components/footer"
 
 export default function Home(props){
     return (
@@ -17,6 +18,7 @@ export default function Home(props){
             <ArduinoWindow id='faq'/>
             <Companies id='company'/>
             <Apply id='apply'/>
+            <Footer id='footer'/>
         </>
     ) 
 }

@@ -3,6 +3,11 @@ import {ReactComponent as Right} from '../../media/images/screen-interface/right
 import {ReactComponent as Left} from '../../media/images/screen-interface/left-arrow.svg'
 import {ReactComponent as Dim} from '../../media/images/screen-interface/dim-light.svg'
 import {ReactComponent as Lit} from '../../media/images/screen-interface/light.svg'
+import Image1 from '../../media/images/screen-interface/IMG_1.jpg'
+import Image2 from '../../media/images/screen-interface/IMG_2.jpg'
+import Image3 from '../../media/images/screen-interface/IMG_3.jpg'
+import Image4 from '../../media/images/screen-interface/IMG_4.jpg'
+import Image5 from '../../media/images/screen-interface/IMG_5.jpg'
 import '../../css/about.css'
 import { useState } from 'react'
 
@@ -10,13 +15,15 @@ function RenderScreen(props) {
     console.log(props.index);
     switch (props.index) {
         case 1:
-            return <svg width="100%" height="100%" viewBox="0 0 283 287" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M274 49H12V188H274V49Z" fill="#FFFFFF"/>
-            </svg>;
+            return <img src={Image1} className="image"></img>;
+        case 2:
+            return <img src={Image2} className="image"></img>;
+        case 3:
+            return <img src={Image3} className="image"></img>;
+        case 4:
+            return <img src={Image4} className="image"></img>;
         default:
-            return <svg width="100%" height="100%" viewBox="0 0 283 287" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M274 49H12V188H274V49Z" fill="#C4C4C4"/>
-            </svg>;
+            return <img src={Image5} className="image"></img>;
     }
 }
 

@@ -1,3 +1,4 @@
+@import-normalize;
 .about-page {
     overflow: auto;
     text-align: center;
@@ -58,6 +59,13 @@
     margin-right: -100%;
     height: 500px;
     width: 500px;
+}
+
+.about-page .monitor-carousel .monitor .screen .image {
+    margin-left: -2px;
+    margin-top: 78px;
+    height: 261px;
+    width: 465px;
 }
 
 .about-page .monitor-carousel .monitor .left {
@@ -138,6 +146,7 @@
         margin-left: 0%;
     }
 }
+
 @media only screen and (max-width: 550px) {
     .about-page .monitor-carousel {
         display: inline-block;
@@ -163,6 +172,13 @@
         margin-right: -100%;
         height: 300px;
         width: 300px;
+    }
+
+    .about-page .monitor-carousel .monitor .screen .image {
+        margin-left: 0px;
+        margin-top: 47px;
+        height: 157px;
+        width: 279px;
     }
     
     .about-page .monitor-carousel .monitor .left {
