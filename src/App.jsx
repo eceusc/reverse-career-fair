@@ -39,7 +39,7 @@ function App() {
       <Suspense fallback={<Loading></Loading>}>
         <Switch>
           <Route path="/" exact component={Home}/>
-          <Route path="/projects" exact component={Projects}/>
+          <Route path="/projects" exact component={Error}/>
           <Route component={Error}/>
         </Switch>
       </Suspense>

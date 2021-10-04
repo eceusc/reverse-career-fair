@@ -1,7 +1,8 @@
-.apply .tab {
-    background-image: url("../media/images/background.png");
+@import-normalize;
+.apply> .tab {
+    background: linear-gradient(0deg, rgba(255,255,255,.8), rgba(255,255,255,.8)), 
+                url('../media/images/background.jpg');
     background-size: cover;
-    opacity: 0.4;
     height: 200px;
     pointer-events:none;
 }
@@ -25,13 +26,14 @@
 
 @media only screen and (max-width:1015px) {
     .apply .tab {
-        background-image: url("../media/images/background.png");
+        background: linear-gradient(0deg, rgba(255,255,255,.8), rgba(255,255,255,.8)), 
+                    url('../media/images/background.jpg');
         background-size: cover;
-        opacity: 0.4;
         height: 300px;
     }
     
     .apply .button {
+        
         float: left;
         margin-top: 100px;
         margin-left: 15%;
@@ -40,6 +42,7 @@
         background-color: transparent;
     }
     .apply .text {
+        
         float: left;
         margin-right: 5%;
         margin-left: 5%;
