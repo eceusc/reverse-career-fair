@@ -1,9 +1,4 @@
 @import-normalize;
-body, #root {
-  min-width: 100vw;
-  min-height: 100vh;
-}
-
 body > * {
   padding: 0px;
   margin: 0px;
@@ -154,7 +149,7 @@ html {
   margin: auto;
 }
 .navbar .container #responsive-navbar-nav.show button {
-  width: fill;
+  width: stretch;
 }
 .navbar .container #responsive-navbar-nav {
   list-style-type: none;
@@ -203,14 +198,14 @@ html {
 }
 .navbar .container button.action-button {
   margin: 1rem;
-  width: fill;
+  width: stretch;
 }
 
 .loading .wrapper {
   display: grid;
   place-items: center;
-  width: fill;
-  height: fill;
+  width: stretch;
+  height: stretch;
 }
 .loading .wrapper svg {
   margin: auto;
@@ -299,40 +294,30 @@ html {
 
 .hero {
   position: relative;
-  width: fill;
+  width: stretch;
   overflow: hidden;
   height: 500px;
-}
-.hero .background {
-  display: grid;
-  place-items: center;
-  position: absolute;
-  width: fill;
-  height: fill;
-  inset: 0;
 }
 .hero .foreground {
   display: grid;
   place-items: center;
   position: absolute;
-  width: fill;
-  height: fill;
+  width: stretch;
+  height: stretch;
   inset: 0;
 }
 
 .hero.home {
   color: #ffffff ;
+  background-color: #10A2AE ;
 }
 @media (prefers-color-scheme: dark) {
   .hero.home {
     color: #ffffff ;
   }
 }
-.hero.home .background {
-  background-color: #10A2AE ;
-}
 @media (prefers-color-scheme: dark) {
-  .hero.home .background {
+  .hero.home {
     background-color: #10A2AE ;
   }
 }

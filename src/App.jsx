@@ -8,6 +8,7 @@ import "./css/bootstrap.css";
 import "./css/app.css"
 // component imports
 import Nav from "./components/nav";
+import Hero from './components/hero'
 // import {DevComponent} from "./utils"
 import Error from "./pages/error"
 import Loading from "./components/loading";
@@ -18,7 +19,11 @@ const Projects = lazy(_=> import("./pages/projects"))
 function App() {
   if (false)
   return <>
-    <div>put sth here!</div>
+    <Hero
+      className="home"
+      >
+          <p>greetings </p>
+    </Hero>
   </>
   return ( 
     <Router>

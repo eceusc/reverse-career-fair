@@ -8,22 +8,22 @@ import {ReactComponent as Upload} from '../../media/images/arduino-interface/upl
 import {ReactComponent as Download} from '../../media/images/arduino-interface/download.svg'
 import '../../css/arduinowindow.css'
 import Collapse from 'react-bootstrap/Collapse'
-import { useLocation } from 'react-router'
 export default function ArduinoWindow(props){
-    const location = useLocation()
-    const ref = useRef()
-    useEffect(() => {
-        if(location.pathname==='/' && location.hash.slice(1)===props.id){
-            ref.current.scrollIntoView({behavior:'smooth'})
-        }
-    }, [location])
     const commentContent=[{
         header:"How will the event be conducted?",
         body:"ECE Reverse Career Fair will be hosted in person this year until further notice.",
     },
     {
-        header:"How will the event be conducted?",
-        body:"ECE Reverse Career Fair will be hosted in person this year until further notice.",
+        header:"Who can apply?",
+        body:"All students, undergraduates and graduates, at UC San Diego are welcome to apply as long as their projects are ECE-oriented (hardware or software).",
+    },
+    {
+        header:"Do I have to pay to attend?",
+        body:"The Reverse Career Fair is completely free for students to attend! However, we require that you register your project through our application process in order for us to ensure that the projects and presentations are high quality.",
+    },
+    {
+        header:"Have more questions for us?",
+        body:"Feel free to contact us at ece-rcf@eng.ucsd.edu if you have any additional questions or concerns, we'll get back to you as soon as possible!",
     },
     ]
     const [isDisplayed,setIsDisplayed]=useState(commentContent.map(_=>false))
@@ -34,7 +34,7 @@ export default function ArduinoWindow(props){
         setIsDisplayed(temp)
     }
     return <>
-        <div ref={ref} className='arduino-window' id={props?.id}>
+        <div className='arduino-window' id={props?.id}>
             <div className='header'>
                 <div className='button-background'>
                     <div className='left-buttons'>

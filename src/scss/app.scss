@@ -2,8 +2,8 @@
 @import 'params/theme_colors';
 @import 'params/breakpoints';
 body,#root{
-  min-width: 100vw;
-  min-height: 100vh;
+  // min-width: 100vw;
+  // min-height: 100vh;
 }
 body>* {
   padding:0px;
@@ -112,7 +112,7 @@ html {
         }
       }
       button{
-        width: fill;
+        width: stretch;
       }
     }
     #responsive-navbar-nav{
@@ -147,7 +147,7 @@ html {
     }
     button.action-button{
       margin: 1rem;
-      width: fill;
+      width: stretch;
     }
   }
 }
@@ -157,8 +157,8 @@ html {
   .wrapper{
     display: grid;
     place-items: center;
-    width: fill;
-    height: fill;
+    width: stretch;
+    height: stretch;
     svg{
       // display: inline-block;
       margin:auto;
@@ -217,30 +217,20 @@ html {
 }
 .hero{
   position: relative;
-  width: fill;
+  width: stretch;
   overflow: hidden;
   height: 500px;
-  .background{
-    display: grid;
-    place-items: center;
-    position: absolute;
-    width: fill;
-    height: fill;
-    inset: 0;
-  }
   .foreground{
     display: grid;
     place-items: center;
     position: absolute;
-    width: fill;
-    height: fill;
+    width: stretch;
+    height: stretch;
     inset: 0;
   }
 
 }
 .hero.home{
   @include theme('color',$text1);
-  .background{
-    @include theme('background-color',$color1);
-  }
+  @include theme('background-color',$color1);
 }
