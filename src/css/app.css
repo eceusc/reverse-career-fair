@@ -296,15 +296,60 @@ html {
   position: relative;
   width: stretch;
   overflow: hidden;
-  height: 500px;
+  height: fit-content;
 }
+
 .hero .foreground {
-  display: grid;
+  margin-top: 100px;
   place-items: center;
-  position: absolute;
   width: stretch;
   height: stretch;
   inset: 0;
+  display: grid;
+}
+
+.hero .foreground .text-button {
+  font-size: 50px;
+  grid-row: 1;
+  grid-column: 1;
+  color: whitesmoke;
+  width: 100%;
+  margin-left: 35px;
+  background-color: transparent;
+}
+
+.hero .foreground .text-button .hero-button {
+  margin-left: 25px;
+  width: 200px;
+}
+
+.hero .foreground .hero-image {
+  grid-row: 1;
+  grid-column: 2;
+  width: 700px;
+}
+
+@media only screen and (max-width:990px) {
+  .hero .foreground {
+    height: fit-content;
+  }
+  .hero .foreground .text-button .hero-button {
+    margin-left: 0px;
+    width: 200px;
+  }
+  .hero .foreground .text-button {
+    margin-left: 0px;
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    grid-row: 1;
+    grid-column: 1;
+  }
+  .hero .foreground .hero-image {
+    grid-row: 2;
+    grid-column: 1;
+    width: 80%;
+  }  
 }
 
 .hero.home {

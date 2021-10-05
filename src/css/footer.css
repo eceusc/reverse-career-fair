@@ -7,7 +7,7 @@
 }
 
 .footer .logos {
-    text-align: center;
+    text-align: left;
     grid-column: 1;
     width: auto;
 }
@@ -21,7 +21,8 @@
 .footer .contact {
     vertical-align: middle;
     align-self: center;
-    text-align: center;
+    text-align: right;
+    margin-right: 15px;
     color: whitesmoke;
     height: 25px;
     width: 100%;
@@ -54,6 +55,8 @@
         grid-column: 1;
         grid-row: 2;
         color: whitesmoke;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
     .footer .contact {
         vertical-align: middle;
