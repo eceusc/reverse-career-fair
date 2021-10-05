@@ -315,7 +315,10 @@ html {
   color: whitesmoke;
   width: 100%;
   margin-left: 35px;
-  background-color: transparent;
+  background: transparent;
+}
+.hero .foreground .text-button .button {
+  background: transparent;
 }
 
 .hero .foreground .text-button .hero-button {

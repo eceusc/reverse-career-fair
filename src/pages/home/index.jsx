@@ -9,7 +9,7 @@ import {ReactComponent as Btn} from '../../media/images/menu button white.svg';
 
 function Btnclk (props) {
     console.log("1");
-    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    window.open("https://forms.gle/TZ2cs6vnBgBXPJ297");
     return 1;
 }
 
